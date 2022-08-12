@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio e Vídeo</title>
+</head>
+<body>
+    <h1>Reproduzindo vídeos</h1>
+    <p>Vídeo hospedado localmente</p>
+    <video src="video/Video1.mp4" width="200" controls></video>
+
+    <p>Outra maneira de reproduzir vídeos</p>
+    <video poster="imagem/thumb.jpg" controls width="150">
+        <source src="video/Video1.mp4" type="video/mp4">
+        <!--Aqui deveria ter outros formatos de vídeos para serem compatíveis com todos os navegadores, assim como foi feito no áudio-->      
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos <a href="video/Video1.mp4">Baixar vídeo</a></p>  
+    </video>
+
+    <!--Vídeos hospedados localmente consomem muita banda de internet e não são uma boa solução-->
+
+    <h1>Reproduzindo vídeos externos do youtube</h1>
+    <!--Escolher vídeo -> ir em compartilhar -> incorporar. Neste caso pode-se hospedar videos no youtube ou opção paga como o vimeo. Isso melhoraria a performance do site-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="audio/audio1.mp3" controls></audio>
+
+    <p>Outra maneira de reproduzir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+    <source src="audio/audio1.mp3" type="audio/mpeg">
+    <source src="audio/audio1.mp3" type="audio/ogg">
+    <source src="audio/audio1.mp3" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="audio/audio1.mp3">Baixar o arquivo</a></p>
+    
+</body>
+</html>
