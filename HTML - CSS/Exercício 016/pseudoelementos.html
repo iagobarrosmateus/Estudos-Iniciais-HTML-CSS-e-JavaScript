@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+    <!--Pseudo elementos mexem com o conteúdo-->
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a{
+            color: rgb(50, 42, 165);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: rgb(44, 117, 74);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        ul{
+            list-style: none;
+        }
+        /*Para adicionar símbolos basta copiar da tabela símbolos HTML e colar no CSS*/
+        a::after{
+            content: '☞ [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: cornflowerblue;
+        }
+        .especial::before{
+            content: '☝';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https:www.github.com">GitHub</a></li>
+        <li><a href="https://www.youtube.com" class="especial">Youtube</a></li>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.globoesporte.com">Globo Esporte</a></li>
+    </ul>
+</body>
+</html>
