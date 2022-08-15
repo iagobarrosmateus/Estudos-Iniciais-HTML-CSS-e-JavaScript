@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgrey;
+            margin: auto;
+        }       
+        header{
+            background-color: rgb(214, 114, 77);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        header > h1{
+            text-align: left;
+        }
+        nav{
+            text-align: center;
+        }
+        nav > a{
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;      
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.308);
+            
+        }
+        nav:hover a{
+               color: rgba(0, 0, 0, 0.555);
+        }
+        main{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+            border-radius: 10px 0px;
+
+        }
+        section#noticias > article > aside >p{
+            text-align: center;
+        }
+        footer{
+            background-color: beige;
+            color: black;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        footer > p{
+            margin: 0px;            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Meu Site</h1>
+        <nav>
+            <a href="">Comece aqui</a>
+            <a href="">Carreira</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+            <section id="noticias">
+                <article>
+                    <aside>
+                        <p>Artigo escrito por João</p>
+                    </aside>
+                </article>
+                <article>
+                    <aside>
+                        <p>Artigo escrito por pedro</p>
+                    </aside>
+                </article>
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam deleniti, aspernatur explicabo eos aliquam exercitationem animi eveniet autem harum atque, voluptates, ratione modi vitae veritatis assumenda minus voluptate consequatur. Maiores?</p>
+                </article>
+            </section>
+
+            <section id="assuntos">
+                <p>Política Esportes Tecnologia</p>
+            </section>
+    </main>
+
+    <footer>
+        <p> Deselvolvido por mim mesmo. </p>
+    </footer>
+</body>
+</html>
