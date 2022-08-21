@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       table{
+            width: 500px;
+            border-collapse: collapse;            
+            vertical-align: middle;
+            text-align: center;   
+            position: relative; 
+        }
+        th, td{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        thead{
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+        /*Cabeçalho fixo*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(255, 205, 243);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: cadetblue;
+        }
+        /*Responsividade da tabela*/
+        div#container{
+            overflow-x: auto;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!--THEAD (TR-TD-TH)> TBODY (TR-TD-TH) > TFOOT (TR-TD-TH)-->
+
+    <div id="container">
+        <table>
+            <caption>Tabela responsiva</caption>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                    <th>Estado</th>
+                    <th>População</th>
+                    <th>Estado</th>
+                    <th>População</th>
+                    <th>Estado</th>
+                    <th>População</th>
+                    <th>Estado</th>
+                    <th>População</th>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+                <tr>
+                    <td>SP</td>
+                    <td>45.000.000</td>
+                </tr>
+                <tr>
+                    <td>PR</td>
+                    <td>10.000.000</td>
+                </tr>
+                <tr>
+                    <td>RS</td>
+                    <td>9.000.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                    <th>Total de Habitantes</th>
+                    <td>0000</td>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

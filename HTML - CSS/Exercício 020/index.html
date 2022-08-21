@@ -14,9 +14,14 @@
             width: 400px;
             border-collapse: collapse;
         }
-        td{
+        td, th{
             border: 1px solid black;
             padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .A{
+            background-color: chocolate;
         }
     </style>
 </head>
@@ -25,20 +30,37 @@
     Table > Table rows > Table header > Table data
     -->
     <table>
+        <colgroup>
+            <col class="A">
+            <col class="B">
+            <col class="C"> 
+        </colgroup>
+        <caption>ABC</caption>
         <tr>
+            <th scope="col">A</th>
+            <th scope="col">B</th>
+            <th scope="col">C</th>
+        </tr>
+        <tr>
+            <!--Mesclar-->
             <td>A1</td>
             <td>B1</td>
-            <td>C1</td>
+            <td rowspan="3">C1</td>
         </tr>
         <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            
+        </tr>
+        <tr>
+            <!--Mesclar-->
+            <td>A4</td>
+            <td colspan="2">B4</td>
         </tr>
     </table>
 </body>
