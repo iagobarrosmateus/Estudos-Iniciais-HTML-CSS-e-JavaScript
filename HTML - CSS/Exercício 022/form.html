@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="GET" autocomplete="on"></form>
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+    </p>
+    <fieldset>
+        <legend>Dados Escolares</legend>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.5">
+            </p>
+            <p>
+                <label for="imes">Período letivo</label>
+                <input type="month"name="mes" id="imes">
+            </p>
+            <p>
+                <label for="ihora">Hora da Prova</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+    </fieldset>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>    
+                    
+                <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label><br> 
+                <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label> <br>
+                <input type="checkbox" name="f1" id="if1"><label for="if1">F1</label> <br>
+                <input type="checkbox" name="box" id="ibox"><label for="ibox">Box</label>           
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label>
+        <input type="radio" name="sexo" id="ifem"><label for="ifem" value="F">Feminino</label>
+    </fieldset>
+    <p>
+        <label for="iemail">E-mail</label>
+        <input type="email" name="email" id="iemail" autocomplete="email" required>
+    </p>
+    <p>
+        <label for="itelefone">Telefone</label>
+        <input type="tel" name="telefone" id="iemail">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
