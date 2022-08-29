@@ -25,6 +25,11 @@ main{
     padding: 10px;
 }
 
+main h1{
+    text-shadow: 2px 2px 2px  black;
+    color: white;
+}
+
 img{
     display: block;
     margin: auto;
