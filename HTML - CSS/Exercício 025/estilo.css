@@ -11,12 +11,24 @@ body, html{
 header {
     background-color: gray;
 }
+span#burguer{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 header > h1{
     padding: 10px;
     text-align: center;
 }
 menu{
-    display: block;
+    display: none;
 }
 menu > ul{
     list-style-type: none;
