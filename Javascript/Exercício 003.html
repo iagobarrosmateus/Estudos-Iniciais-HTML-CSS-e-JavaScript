@@ -20,13 +20,24 @@
 <body>
     <h1>Olá Mundo !</h1>
     <script>
-        var n1 = window.prompt('Digite um número')
-        var n2 = window.prompt('Digite outro Número')
-        var soma = n1 + n2
-        window.prompt('A soma dos números é ' + soma)
+        var n1 = Number.parseInt(window.prompt('Digite um número'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        var n3 = Number(window.prompt('Digite outro número'))//"Number" o JS assimilia que tipo de variável númerica é.
+        var soma = n1 + n2 + n3
+        window.alert('A soma dos números é ' + soma)
+        /* Outro jeito de concatenar(c/ crase)
+
+        window.alert(`A soma entre ${n1}, ${n2} e ${n3} é: ${soma}`)
+        
+        */
+
         // String (+) string = Concatenação
         // number (+) number = Adição
-        // prompt = trata os valores como string
+        /* prompt = trata os valores como string (precisa converter)*/
+        // String(n)Converte para string
+        // n.toString()Converte para string também
+        // ex: n1 = 134,5 , n1.toFixed(2): 134,50. deixa o número com mais casas decimais 
+        //Transformar o n1 em valor monetário: n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) 
     </script>
 </body>
 </html>
