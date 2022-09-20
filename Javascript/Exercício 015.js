@@ -53,3 +53,11 @@ function square (n){
     return n*n
 }
 console.log(square(5))
+
+//---------------------------------------------------
+var num1 = 20
+var num2 = 3
+function multiplica() {
+    return num1 * num2
+  }
+  console.log(multiplica())
